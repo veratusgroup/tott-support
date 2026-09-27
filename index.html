@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>Tott — Support</title>
+<meta name="description" content="Help and contact details for Tott, a daily maths puzzle for iPhone from Veratus Games.">
+<link rel="icon" href="data:,">
+<style>
+  /*
+    Tott's paper and ink. WCAG 2.2 contrast, computed with the WCAG relative-luminance formula:
+      ink       #2E3720 : 11.56:1 on card #FBF6E9 · 10.14:1 on paper #EFE7D6   (body text)
+      ink-soft  #556237 :  6.10:1 on card        ·  5.35:1 on paper           (secondary text)
+      olive     #4E6130 :  6.33:1 on card        ·  5.55:1 on paper           (headings)
+      coral-ink #A33C1E :  6.04:1 on card        ·  5.30:1 on paper           (links, focus ring)
+    Every text pair passes AA (4.5:1). The focus ring passes 3:1 on both surfaces.
+  */
+  @font-face { font-family: "Atkinson Hyperlegible"; font-style: normal; font-weight: 400; font-display: swap;
+               src: url("./fonts/AtkinsonHyperlegible-Regular.ttf") format("truetype"); }
+  @font-face { font-family: "Atkinson Hyperlegible"; font-style: normal; font-weight: 700; font-display: swap;
+               src: url("./fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype"); }
+  :root { --paper:#EFE7D6; --card:#FBF6E9; --ink:#2E3720; --ink-soft:#556237; --olive:#4E6130; --coral-ink:#A33C1E;
+          --hairline:rgba(46,55,32,.14); color-scheme: light; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); text-align: left; overflow-wrap: break-word;
+         font: 400 1.125rem/1.6 "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+  .skip { position: absolute; left: 16px; top: -100px; background: var(--card); color: var(--coral-ink);
+          padding: 10px 14px; border-radius: 8px; font-weight: 700; }
+  .skip:focus { top: 12px; }
+  .site { padding-top: 20px; padding-bottom: 8px; }
+  .brand { margin: 0; font-weight: 700; font-size: 1.25rem; color: var(--olive); }
+  .brand span { font-weight: 400; color: var(--ink-soft); }
+  nav ul { list-style: none; margin: 8px 0 0 -8px; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 8px; }
+  nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 8px; border-radius: 10px; }
+  nav a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: none; }
+  main { margin: 12px 0 40px; }
+  .card { background: var(--card); border: 1px solid var(--hairline); border-radius: 16px; padding: 28px 24px 32px; }
+  h1, h2, h3 { color: var(--olive); line-height: 1.25; font-weight: 700; }
+  h1 { font-size: 2rem; margin: 0 0 6px; }
+  h2 { font-size: 1.375rem; margin: 40px 0 10px; }
+  h3 { font-size: 1.125rem; margin: 28px 0 6px; }
+  .sub { color: var(--ink-soft); margin: 0 0 24px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 1.25em; }
+  li { margin: 6px 0; }
+  li > ul { margin: 6px 0 0; }
+  .box { background: var(--paper); border-left: 4px solid var(--olive); border-radius: 8px; padding: 14px 18px; margin: 0 0 8px; }
+  .box p:last-child, .box ul:last-child { margin-bottom: 0; }
+  dl { margin: 0 0 14px; }
+  dt { font-weight: 700; margin-top: 16px; }
+  dd { margin: 4px 0 0; }
+  a { color: var(--coral-ink); text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; }
+  a:hover { text-decoration-thickness: .14em; }
+  :focus-visible { outline: 3px solid var(--coral-ink); outline-offset: 3px; border-radius: 4px; }
+  .links { list-style: none; padding: 0; }
+  .links a { display: inline-flex; align-items: center; min-height: 44px; }
+  footer { color: var(--ink-soft); font-size: 1rem; padding-bottom: 48px; }
+  footer p { margin: 0 0 8px; }
+  @media (max-width: 480px) { .card { padding: 22px 16px 26px; } h1 { font-size: 1.75rem; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the page</a>
+
+<header class="site wrap">
+  <p class="brand">Tott <span>· Veratus Games</span></p>
+  <nav aria-label="Tott pages">
+    <ul>
+      <li><a href="./" aria-current="page">Support</a></li>
+      <li><a href="./privacy.html">Privacy Policy</a></li>
+      <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+<div class="card">
+
+  <h1>Support</h1>
+  <p class="sub">Tott · Veratus Games · Last updated 27 September 2026</p>
+
+  <p>Tott is a daily maths puzzle for iPhone. Need a hand? We are happy to help.</p>
+
+  <h2>Contact</h2>
+  <div class="box">
+    <p><strong>Email: <a href="mailto:sayhello@veratusgames.com">sayhello@veratusgames.com</a></strong></p>
+    <p>Please tell us which iPhone you have, your iOS version, and what happened.</p>
+  </div>
+  <p>Tott is made by Veratus Games, a trading name of Veratus Group Limited. Company number 17258282.</p>
+  <p>Registered in England and Wales. Registered office: Office 7258, 58 Peregrine Road, Ilford IG6 3SZ, United Kingdom.</p>
+
+  <h2>What you need</h2>
+  <ul>
+    <li>An iPhone with iOS 16.0 or later.</li>
+    <li>Tott is made for iPhone, in portrait.</li>
+  </ul>
+
+  <h2>How to play</h2>
+  <ul>
+    <li>Each board gives you number tiles and a target.</li>
+    <li>Pick two tiles, then add (+), subtract (−), multiply (×) or divide (÷).</li>
+    <li>The two tiles merge into one new tile. The first tile you pick goes first: 8, then 3, then − makes 5.</li>
+    <li>Keep going until one tile is left. If it equals the target exactly, you have solved the board.</li>
+    <li>Some boards can be solved in more than one way. Each way is a <strong>route</strong>.</li>
+  </ul>
+
+  <h2>Ways to play</h2>
+  <dl>
+    <dt>Journey</dt>
+    <dd>Chapters of boards, at your own pace.</dd>
+    <dt>Daily</dt>
+    <dd>One new puzzle a day, the same for everyone.</dd>
+    <dt>Gauntlet</dt>
+    <dd>Boards one after another, with no clock. The run ends at your first miss.</dd>
+    <dt>Timed</dt>
+    <dd>Boards against the clock. Time left when you solve a stage carries to the next one. The run ends when the clock reaches 0.</dd>
+    <dt>Math Lit</dt>
+    <dd>The target is a clue to work out first, such as 3² + 15. Every stage you clear adds a block to your tower. A run has 3 hearts.</dd>
+    <dt>Pro</dt>
+    <dd>The target is an equation to solve, such as 3x − 4 = 68, or a short word problem. A run has 3 hearts.</dd>
+  </dl>
+  <p>The Gauntlet, Timed, Math Lit and Pro each have one ranked run a day, the same for everyone, and practice runs.</p>
+
+  <h2>Questions</h2>
+
+  <h3>When does a new day start?</h3>
+  <ul>
+    <li>The Daily changes at midnight where you are, on your iPhone’s local time.</li>
+    <li>The ranked runs change at midnight UTC. In the UK that is 1 am in summer.</li>
+  </ul>
+
+  <h3>Do I need an account?</h3>
+  <ul>
+    <li>No. There is no Tott account, and nothing to sign up for.</li>
+  </ul>
+
+  <h3>Where is my progress saved?</h3>
+  <ul>
+    <li>On your iPhone only. We never receive it.</li>
+    <li>Deleting Tott deletes your progress. We cannot restore it, because we never hold a copy.</li>
+    <li>Your purchases are safe. <strong>Restore purchases</strong> gets them back from the App Store.</li>
+  </ul>
+
+  <h3>Are there ads or tracking?</h3>
+  <ul>
+    <li>No ads, ever. No analytics and no tracking.</li>
+    <li>Tott collects no personal data. See our <a href="./privacy.html">Privacy Policy</a>.</li>
+  </ul>
+
+  <h3>What is free, and what is never sold?</h3>
+  <ul>
+    <li>Tott is a complete game, free to play.</li>
+    <li>Hints, undo, the Daily and every accessibility setting are free, always. They are never sold, and neither is another go at a ranked run.</li>
+    <li>There are no ads and no energy, so there is nothing to pay to remove.</li>
+    <li>Tott Plus (a monthly or yearly subscription) and Unlock Everything (a one-time purchase) are optional.</li>
+  </ul>
+
+  <h3>I bought something and it is not there.</h3>
+  <ul>
+    <li>In Tott, tap <strong>Restore purchases</strong>.</li>
+    <li>It asks the App Store for anything you have bought with this Apple Account, and puts it back.</li>
+    <li>If you paid and it still has not arrived, email us with the date and we will help.</li>
+  </ul>
+
+  <h3>How do I cancel Tott Plus?</h3>
+  <ul>
+    <li>Open <strong>Settings</strong> on your iPhone.</li>
+    <li>Tap your name, then <strong>Subscriptions</strong>, then <strong>Tott Plus</strong>.</li>
+    <li>Tap <strong>Cancel Subscription</strong>.</li>
+  </ul>
+
+  <h3>How do I ask for a refund?</h3>
+  <ul>
+    <li>Apple handles refunds.</li>
+    <li>Go to <strong>reportaproblem.apple.com</strong>.</li>
+  </ul>
+
+  <h3>Can my family share it?</h3>
+  <ul>
+    <li>Yes. Tott Plus and Unlock Everything work with Family Sharing.</li>
+  </ul>
+
+  <h3>Something went wrong. How do I report it?</h3>
+  <ul>
+    <li>In Tott, open <strong>Settings</strong>, then <strong>About</strong>, and tap <strong>Copy diagnostics</strong>.</li>
+    <li>Paste it into an email to us, and tell us what happened.</li>
+    <li>It holds the app version and build, the iOS version, the iPhone model, and the app’s recent notes, errors among them.</li>
+    <li>It holds no name and no identifier. Tott sends nothing by itself.</li>
+  </ul>
+
+  <h2>Accessibility</h2>
+  <ul>
+    <li>Tott is set in <strong>Atkinson Hyperlegible</strong>, a typeface the Braille Institute designed for readers with low vision.</li>
+    <li>If you hit an accessibility problem, please email us. We treat it as a bug, not a feature request.</li>
+  </ul>
+
+  <h2>Legal</h2>
+  <ul class="links">
+    <li><a href="./privacy.html">Privacy Policy</a></li>
+    <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple’s standard licence agreement)</a></li>
+  </ul>
+
+</div>
+</main>
+
+<footer class="wrap">
+  <p>© 2026 Veratus Games. All rights reserved.</p>
+  <p>Veratus Games is a trading name of Veratus Group Limited · <a href="mailto:sayhello@veratusgames.com">sayhello@veratusgames.com</a></p>
+</footer>
+</body>
+</html>

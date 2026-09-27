@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>Tott — Privacy Policy</title>
+<meta name="description" content="How Tott, a daily maths puzzle for iPhone from Veratus Games, handles your data.">
+<link rel="icon" href="data:,">
+<style>
+  /*
+    Tott's paper and ink. WCAG 2.2 contrast, computed with the WCAG relative-luminance formula:
+      ink       #2E3720 : 11.56:1 on card #FBF6E9 · 10.14:1 on paper #EFE7D6   (body text)
+      ink-soft  #556237 :  6.10:1 on card        ·  5.35:1 on paper           (secondary text)
+      olive     #4E6130 :  6.33:1 on card        ·  5.55:1 on paper           (headings)
+      coral-ink #A33C1E :  6.04:1 on card        ·  5.30:1 on paper           (links, focus ring)
+    Every text pair passes AA (4.5:1). The focus ring passes 3:1 on both surfaces.
+  */
+  @font-face { font-family: "Atkinson Hyperlegible"; font-style: normal; font-weight: 400; font-display: swap;
+               src: url("./fonts/AtkinsonHyperlegible-Regular.ttf") format("truetype"); }
+  @font-face { font-family: "Atkinson Hyperlegible"; font-style: normal; font-weight: 700; font-display: swap;
+               src: url("./fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype"); }
+  :root { --paper:#EFE7D6; --card:#FBF6E9; --ink:#2E3720; --ink-soft:#556237; --olive:#4E6130; --coral-ink:#A33C1E;
+          --hairline:rgba(46,55,32,.14); color-scheme: light; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); text-align: left; overflow-wrap: break-word;
+         font: 400 1.125rem/1.6 "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+  .skip { position: absolute; left: 16px; top: -100px; background: var(--card); color: var(--coral-ink);
+          padding: 10px 14px; border-radius: 8px; font-weight: 700; }
+  .skip:focus { top: 12px; }
+  .site { padding-top: 20px; padding-bottom: 8px; }
+  .brand { margin: 0; font-weight: 700; font-size: 1.25rem; color: var(--olive); }
+  .brand span { font-weight: 400; color: var(--ink-soft); }
+  nav ul { list-style: none; margin: 8px 0 0 -8px; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 8px; }
+  nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 8px; border-radius: 10px; }
+  nav a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: none; }
+  main { margin: 12px 0 40px; }
+  .card { background: var(--card); border: 1px solid var(--hairline); border-radius: 16px; padding: 28px 24px 32px; }
+  h1, h2, h3 { color: var(--olive); line-height: 1.25; font-weight: 700; }
+  h1 { font-size: 2rem; margin: 0 0 6px; }
+  h2 { font-size: 1.375rem; margin: 40px 0 10px; }
+  h3 { font-size: 1.125rem; margin: 28px 0 6px; }
+  .sub { color: var(--ink-soft); margin: 0 0 24px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 1.25em; }
+  li { margin: 6px 0; }
+  li > ul { margin: 6px 0 0; }
+  .box { background: var(--paper); border-left: 4px solid var(--olive); border-radius: 8px; padding: 14px 18px; margin: 0 0 8px; }
+  .box p:last-child, .box ul:last-child { margin-bottom: 0; }
+  dl { margin: 0 0 14px; }
+  dt { font-weight: 700; margin-top: 16px; }
+  dd { margin: 4px 0 0; }
+  a { color: var(--coral-ink); text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; }
+  a:hover { text-decoration-thickness: .14em; }
+  :focus-visible { outline: 3px solid var(--coral-ink); outline-offset: 3px; border-radius: 4px; }
+  .links { list-style: none; padding: 0; }
+  .links a { display: inline-flex; align-items: center; min-height: 44px; }
+  footer { color: var(--ink-soft); font-size: 1rem; padding-bottom: 48px; }
+  footer p { margin: 0 0 8px; }
+  @media (max-width: 480px) { .card { padding: 22px 16px 26px; } h1 { font-size: 1.75rem; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the page</a>
+
+<header class="site wrap">
+  <p class="brand">Tott <span>· Veratus Games</span></p>
+  <nav aria-label="Tott pages">
+    <ul>
+      <li><a href="./">Support</a></li>
+      <li><a href="./privacy.html" aria-current="page">Privacy Policy</a></li>
+      <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+<div class="card">
+
+  <h1>Privacy Policy</h1>
+  <p class="sub">Tott · Veratus Games · Last updated 27 September 2026</p>
+
+  <h2>The short version</h2>
+  <div class="box">
+    <ul>
+      <li>Tott does not collect any personal data.</li>
+      <li>There are no Tott accounts, no ads, no analytics and no tracking.</li>
+      <li>Your progress is saved on your iPhone, not by us.</li>
+      <li>Leaderboards, the weekly League and achievements use Apple’s Game Center. Purchases use the App Store. Apple runs both. Tott sends nothing to us.</li>
+    </ul>
+  </div>
+
+  <h2>Who we are</h2>
+  <ul>
+    <li>Tott is made by <strong>Veratus Games</strong>, a trading name of <strong>Veratus Group Limited</strong>.</li>
+    <li>Veratus Group Limited is a private limited company, company number 17258282.</li>
+    <li>Registered in England and Wales. Registered office: Office 7258, 58 Peregrine Road, Ilford IG6 3SZ, United Kingdom.</li>
+    <li>Email: <a href="mailto:sayhello@veratusgames.com">sayhello@veratusgames.com</a></li>
+  </ul>
+
+  <h2>What Tott collects</h2>
+  <p>Nothing. The app:</p>
+  <ul>
+    <li>never asks for your name, email address, location or your iPhone’s contacts;</li>
+    <li>never uses your iPhone’s advertising identifier;</li>
+    <li>contains no advertising, no analytics and no third-party tracking code;</li>
+    <li>shows no tracking prompt, because it does not track you;</li>
+    <li>has no servers of its own, so it sends nothing to us.</li>
+  </ul>
+
+  <h2>What is saved on your iPhone</h2>
+  <ul>
+    <li>Your progress: Journey, your Daily results and streak, your best in the Gauntlet, Timed, Math Lit and Pro, and the routes you have found.</li>
+    <li>Your settings, including any reminder time.</li>
+    <li>It is kept on your iPhone only. We never receive it.</li>
+    <li>Deleting Tott deletes it. We cannot restore it, because we never hold a copy.</li>
+  </ul>
+
+  <h2>Purchases</h2>
+  <ul>
+    <li>Tott Plus (a subscription) and Unlock Everything (a one-time purchase) are sold through the App Store.</li>
+    <li>Apple takes the payment. We never see your card details, your name or your Apple Account.</li>
+    <li>Tott uses Apple’s StoreKit, on your iPhone, to ask the App Store what you own.</li>
+    <li>Tott has no server, so the answer is never sent to us.</li>
+    <li><strong>Restore purchases</strong> asks the App Store the same question again. Apple’s own system handles it.</li>
+  </ul>
+
+  <h2>Game Center</h2>
+  <ul>
+    <li>Tott uses Apple’s <strong>Game Center</strong> for its leaderboards, the weekly League and its achievements.</li>
+    <li>Game Center is optional. Tott is fully playable without it.</li>
+    <li>If you sign in, Apple’s Game Center handles your sign-in, your scores and your friends, under <a href="https://www.apple.com/uk/legal/privacy/">Apple’s Privacy Policy</a>.</li>
+    <li>To show your friends’ scores, iOS may ask whether Tott can see your Game Center friends. You can say no.</li>
+    <li>What Tott sends to Game Center, only while you are signed in:
+      <ul>
+        <li>your scores from ranked runs: Gauntlet boards cleared, Timed stages cleared, and Math Lit and Pro tower points;</li>
+        <li>for the Daily’s League board, the number of routes you found on that week’s Dailies;</li>
+        <li>the achievements you earn.</li>
+      </ul>
+    </li>
+    <li>Your League scores are sent only once you have solved 3 Dailies that week.</li>
+    <li>It never sends your streak. Practice runs, Build it, and a Timed run with the Extra time setting never send a score.</li>
+    <li>Tott sends none of this to us. Tott has no server.</li>
+  </ul>
+
+  <h2>Reminders</h2>
+  <ul>
+    <li>Reminders are off unless you turn them on.</li>
+    <li>Your iPhone schedules them itself. Nothing is sent from a server.</li>
+  </ul>
+
+  <h2>Sharing your result</h2>
+  <ul>
+    <li>The Share button opens your iPhone’s share sheet with a short text:
+      <ul>
+        <li>the puzzle number;</li>
+        <li>how many routes you found, as a row of coloured squares;</li>
+        <li>a link to Tott on the App Store.</li>
+      </ul>
+    </li>
+    <li>A finished Math Lit or Pro tower shares a shorter text: the mode, the blocks and the points, with one square per block. It has no link.</li>
+    <li>It never includes the board, your answers or anything about you.</li>
+    <li>You choose where it goes. Tott does not see where you send it.</li>
+  </ul>
+
+  <h2>If you email us</h2>
+  <ul>
+    <li>We receive your email address and what you write. We use them only to reply to you.</li>
+    <li>In Tott, <strong>Settings</strong>, then <strong>About</strong>, then <strong>Copy diagnostics</strong> copies a short technical note to your clipboard:
+      <ul>
+        <li>the app version and build, the save version, the iOS version, the iPhone model, and the app’s recent notes (errors, and problems saving or loading);</li>
+        <li>it contains no name and no identifier. Ids and user names in the notes are blanked out first.</li>
+      </ul>
+    </li>
+    <li>The app sends nothing. The note reaches us only if you paste it into an email yourself.</li>
+  </ul>
+
+  <h2>Crash reports</h2>
+  <ul>
+    <li>Tott contains no crash-reporting code.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <ul>
+    <li>Tott is made for a general audience.</li>
+    <li>It is not directed at children. It is not designed or marketed for them in particular.</li>
+    <li>Tott collects no personal data from anyone, so it collects none from children.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <ul>
+    <li>UK data protection law (the UK GDPR) gives you rights over your personal data.</li>
+    <li>The app holds none of your personal data, so there is nothing in it for us to show you, correct or delete.</li>
+    <li>If you have emailed us, you can ask to see those emails, or ask us to delete them. Write to <a href="mailto:sayhello@veratusgames.com">sayhello@veratusgames.com</a>.</li>
+    <li>You can complain to the Information Commissioner’s Office (ICO), at <strong>ico.org.uk/make-a-complaint</strong>.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <ul>
+    <li>If this policy changes, the new version will be posted on this page with a new “Last updated” date.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <ul>
+    <li>Email: <a href="mailto:sayhello@veratusgames.com">sayhello@veratusgames.com</a></li>
+    <li>Veratus Games is a trading name of Veratus Group Limited, United Kingdom.</li>
+  </ul>
+
+</div>
+</main>
+
+<footer class="wrap">
+  <p>© 2026 Veratus Games. All rights reserved.</p>
+  <p>Veratus Games is a trading name of Veratus Group Limited · <a href="mailto:sayhello@veratusgames.com">sayhello@veratusgames.com</a></p>
+</footer>
+</body>
+</html>
